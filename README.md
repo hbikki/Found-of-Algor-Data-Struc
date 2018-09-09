@@ -23,3 +23,17 @@ Sort the words in the list.
 Print out the sorted list of words.
 Take a look at the sorted list of words to see what the default processes consider a word.
 Test your program carefully.  Realize that when it is tested, the input used will be different from yours.  Thus, you must not allow your program to be specific to the particular paragraph that you read.
+
+
+====================================================================================================================================
+Home Work -2
+
+From NLTK book, Chapter 1:
+
+◑ Write expressions for finding all words in text6 that meet the conditions listed below. The result should be in the form of a list of words: ['word1', 'word2', ...].
+
+Ending in ize
+Containing the letter z
+Containing the sequence of letters pt
+Having all lowercase letters except for an initial capital (i.e., titlecase)
+Do this and write the results to a file.  Upload your python code and also the output fi
