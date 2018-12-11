@@ -5,7 +5,16 @@ Maxwords=0;
 MinWords=9223372036854775807;
 paragraph=input("enter text :\n");
 paragraphList=paragraph.split('.');
+print ("=======================================================================");
+print ("Total No.of sentences before fix :  "+str(len(paragraphList)));
+print ("=======================================================================");
+print ("Last sentences before fix:  "+paragraphList[len(paragraphList)-1]);
+print ("=======================================================================");
 paragraphList.pop();
+print ("Total No.of sentences after fix :  "+str(len(paragraphList)));
+print ("=======================================================================");
+print ("Last sentences after fix:  "+paragraphList[len(paragraphList)-1]);
+print ("=======================================================================");
 Position=0;
 for i in paragraphList:
     i=i.strip();
@@ -20,15 +29,16 @@ for i in paragraphList:
     TotalWordsLength=TotalWordsLength+length;
     Position+=1;
 print ("Total No.of words  :  "+str(TotalWordsLength));
+print ("=======================================================================");
 print ("Longest Sentence  :  "+ paragraphList[longestPosition].strip());
+print ("=======================================================================");
 print ("Smallest Sentence  :  "+paragraphList[smallestPosition].strip());
+print ("=======================================================================");
+allWordsList=paragraph.split(' ');
 print ("Before sorting :");
-print (paragraphList);
+print (allWordsList);
+print ("=======================================================================");
+allWordsList.sort();
 print ("sorting Word Lists:");
-for i in paragraphList:
-    wordList=i.split();
-    wordList.sort();
-    print (wordList);
-    
-    
-
+print (allWordsList);
+print ("=======================================================================");
